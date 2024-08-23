@@ -26,8 +26,7 @@ nav {
 }
 
 .logo {
-    font-size: 1.5em;
-    letter-spacing: 1px;
+    width: 180px;
 }
 
 .container-search-box {
@@ -65,12 +64,17 @@ nav {
 }
 
 .element-header {
+    cursor: pointer;
     width: max-content;
     line-height: .8rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 6px;
+}
+
+.text-element-header:hover {
+    opacity: 80%;
 }
 
 span.material-symbols-outlined {
@@ -80,6 +84,11 @@ span.material-symbols-outlined {
 
 #market {
     font-size: 2.5em;
+}
+
+#market:hover {
+    cursor: pointer;
+    opacity: 80%;
 }
 
 .bottom-header {
@@ -98,4 +107,9 @@ span.material-symbols-outlined {
 
 li {
     text-decoration: none;
+}
+
+li:hover {
+    cursor: pointer;
+    font-weight: 600;
 }
