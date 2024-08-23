@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+main {
+    padding: 24px;
+    background-color: #f4f4f4;
+}
+
+.container-remedios {
+    margin-top: 24px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    width: max-content;
+    padding: 12px 24px;
+    border: 1 solid #DADEDC;
+
+    transition: .3s;
+}
+
+.card-item:hover {
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.096), 4px -4px 6px rgba(0, 0, 0, 0.096);
+}
+
+.img-card {
+    width: 200px;
+    height: 300px;
+}
+
+.nome-item {
+    margin-top: 6px;
+    color: black;
+    font-size: 14px;
+}
+
+.preco-item {
+    color: #7362fc;
+
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.button-add {
+    cursor: pointer;
+    margin-top: 12px;
+    background-color: #7362fc;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 200px;
+}
+
+.button-add:hover {
+    background-color: #7462fcea;
+}
+
+.input-qntd {
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #39cbb8;
+    border-radius: 200px;
+    text-align: center;
+    display: none;
+}
+
+.input-qntd:focus {
+    outline: none;
+}
+
+.input-qntd::placeholder {
+    color: #39cbb8;
+}
