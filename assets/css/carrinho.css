@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+header {
+    width: 100%;
+    height: max-content;
+}
+
+nav {
+    display: flex;
+    height: 12vh;
+}
+
+.left-header {
+    width: 50%;
+    background-color: #ededfa;
+}
+
+.right-header {
+    width: 50%;
+    background-color: #403c3c;
+}
