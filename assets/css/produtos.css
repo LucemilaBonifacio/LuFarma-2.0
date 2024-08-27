@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+main {
+    width: 100%;
+    padding: 24px;
+    background-color: #f4f4f4;
+}
+
+#container-remedios {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+}
+
+#container-cosmeticos {
+    margin: 24px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 250px;
+    align-items: center;
+    
+    background-color: #fff;
+    padding: 12px 24px;
+    border: 1px solid #DADEDC;
+
+    transition: .3s;
+}
+
+.card-item:hover {
+    box-shadow: -4px 4px 6px rgba(0, 0, 0, 0.096), 4px -4px 6px rgba(0, 0, 0, 0.096);
+}
+
+.img-card {
+    width: 200px;
+    height: 300px;
+}
+
+.nome-item {
+    margin-top: 6px;
+    color: black;
+    font-size: 14px;
+}
+
+.preco-item {
+    color: #7362fc;
+
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.button-add {
+    cursor: pointer;
+    margin-top: 12px;
+    background-color: #7362fc;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 200px;
+}
+
+.button-add.invisible {
+    display: none;
+}
+
+.button-add:hover {
+    background-color: #7462fcea;
+}
+
+.container-input {
+    margin-top: 12px;
+    max-width: 200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #39cbb8;
+    border-radius: 200px;
+}
+
+.container-input.visible {
+    display: flex;
+}
+
+.container-input span {
+    cursor: pointer;
+}
+
+.container-input span:nth-child(1) {
+    margin-left: 12px;
+}
+
+.container-input span.add {
+    margin-right: 12px;
+}
+
+.input-qntd {
+    width: 100%;
+    color: #39cbb8;
+    height: 40px;
+    padding: 12px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    /* display: none; */
+}
+
+.input-qntd:focus {
+    outline: none;
+}
+
+.input-qntd::placeholder {
+    color: #39cbb8;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background-color: #f4f4f4;
+}
