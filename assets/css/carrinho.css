@@ -8,14 +8,48 @@ header {
 nav {
     display: flex;
     height: 12vh;
+    background-color: #403c3c;
 }
 
-.left-header {
+#left-header {
+    color: #403c3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 96px;
     width: 50%;
     background-color: #ededfa;
+    border-bottom-right-radius: 60px;
 }
 
-.right-header {
+.logo {
+    width: 160px;
+}
+
+#sacola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+#right-header {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    color: #ededfa;
     width: 50%;
-    background-color: #403c3c;
+    padding: 0px 24px;
+}
+
+.elements-header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.elements-header:hover {
+    opacity: 80%;
 }
