@@ -44,9 +44,37 @@
     </header>
 
     <main>
-        
+        <section class="container-carrinho">
+            <div class="item">
+                <div class="left-item">
+                    <img class="photo-item" src="../assets/img/remedios/amoxilina.png" alt="foto amoxilina">
+                    <p class="name-item">nome do produto</p>
+                </div>
+
+                <div class="right-item">
+                    <p class="price-item">Preço</p>
+                    <div class="container-input">
+                        <span class="material-symbols-outlined">
+                            Remove
+                        </span>
+                        <input class="input-qntd" type="number" name="quantidade" id="quantidade" placeholder="1">
+                        <span class="material-symbols-outlined add">
+                            add
+                        </span>
+                    </div>
+                    <span class="material-symbols-outlined delete">
+                        Delete
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="dados">
+
+        </section>
     </main>
 
     <footer>&copy;LuFarma, todos os direitos reservados.</footer>
+
+    <script type="module" src="../scripts/show-carrinho.js"></script>
 </body>
 </html>

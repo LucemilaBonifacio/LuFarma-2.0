@@ -86,3 +86,5 @@ function somar(botao) {
     carrinho.push(selecionado)
     input.value = Number(input.value) + 1
 }
+
+export default carrinho;

@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     width: 100%;
     height: max-content;
@@ -52,4 +56,135 @@ nav {
 
 .elements-header:hover {
     opacity: 80%;
+}
+
+main {
+    padding:12px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    width: 100%;
+    height: calc(100% - 10vh);
+}
+
+.container-carrinho {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ededfa;
+    border-radius: 12px;
+    grid-column: 1 / 4;
+}
+
+.item {
+    height: max-content;
+    max-height: 113px;
+    width: 100%;
+    padding: 6px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.left-item .name-item {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.right-item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.right-item .price-item {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.right-item > div.container-input {
+    margin-right: 24px;
+}
+
+.right-item .delete {
+    cursor: pointer;
+}
+
+.item .photo-item {
+    width: 100px;
+    height: 90px;
+}
+
+
+.container-input {
+    background-color: #403c3c;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #403c3c;
+    border-radius: 200px;
+}
+
+.container-input span {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+.container-input span:nth-child(1) {
+    padding-left: 3px;
+}
+
+.container-input span.add {
+    padding-right: 3px;
+}
+
+.input-qntd {
+    width: 100%;
+    color: #403c3c;
+    height: 25px;
+    padding: 12px;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    /* display: none; */
+}
+
+.input-qntd:focus {
+    outline: none;
+}
+
+.input-qntd::placeholder {
+    color: #403c3c;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.dados {
+    background-color: #ededfa;
+    border-radius: 12px;
+    grid-column: 4;
+}
+
+footer {
+    padding: 3px;
+    text-align: center;
+    color: white;
+    background-color: #7362fc;
 }
